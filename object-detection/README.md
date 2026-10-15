@@ -46,7 +46,9 @@ The YOLOv8n model downloads itself the first time you run it.
 Allow camera access, and it starts describing what it sees every 3 seconds. Press **Q** in the video window to quit.
 
 ## How well it works
-Tested on: ___ (laptop, CPU, RAM)
+Tested on: laptop with 13th Gen Intel Core i5-1340P CPU, 16 GB RAM
+
+Runs on CPU only, with no GPU acceleration.
 
 | Metric | Result |
 |---|---|
