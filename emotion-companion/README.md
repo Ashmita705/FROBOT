@@ -18,7 +18,7 @@ Frobot has to do more than see the world. It also has to talk to the person in a
 - Shows the live camera feed with the detected emotion on screen
 
 ## How the program runs
-![Flowchart](architecture.jpg)
+![Flowchart](ai-2%20architecture.png)
 
 ## Technology Stack and Rationale
 - **DeepFace** - ready-made facial emotion recognition, no training needed
