@@ -1,0 +1,8 @@
+deepface
+openai-whisper
+groq
+sounddevice
+scipy
+pywin32
+opencv-python==4.10.0.84
+numpy==2.4.0
