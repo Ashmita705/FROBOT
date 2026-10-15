@@ -17,7 +17,7 @@ Most vision apps for blind users need a phone held up and a good internet connec
 - Shows a live video window with boxes around what it found
 
 ## How the program runs
-![Flowchart](assets/architecture.png)
+![Flowchart](architecture.jpg)
 
 ## Technology Stack and Rationale
 - **YOLOv8n** - smallest YOLOv8 model (about 6 MB), runs in real time on a laptop CPU
