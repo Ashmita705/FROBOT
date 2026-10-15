@@ -64,12 +64,17 @@ Tested on: laptop with 13th Gen Intel Core i5-1340P CPU, 16 GB RAM
 
 | Situation | What happened |
 |---|---|
-| Smiling face | ___ |
-| Sad or neutral face | ___ |
-| Speaking in a quiet voice | ___ |
-| Speaking loudly | ___ |
-| Interrupting Frobot with SPACE | ___ |
-| Asking for help or a simple question | ___ |
+| Smiling face | Detected happy |
+| Sad face (slightly sad eyes, hand on cheek or mouth) | Detected sad |
+| No expression | Detected neutral |
+| Mouth open with wide eyes | Detected surprised |
+| Flared nose, big eyes, raised eyebrows | Detected angry |
+| Asked "how am I feeling?" with a sad face | Replied that I seemed a bit low, said everyone has these moments, and offered to help |
+| Asked the same with a happy face | Replied that I looked upbeat and offered help if I needed anything |
+| Asked simple questions | Answered correctly |
+| Interrupted with SPACE and asked a new question | Stopped speaking immediately and answered the new question |
+| Speaking quietly | Whisper sometimes misheard me, and Frobot replied to the wrong words instead of what I actually said |
+| Speaking loudly | Heard me correctly and gave the right reply |
 
 Time from pressing SPACE to the start of Frobot's reply: ___ seconds
 
@@ -95,6 +100,7 @@ Time from pressing SPACE to the start of Frobot's reply: ___ seconds
 - Voice tone is estimated from loudness only, so a loud voice isn't always a stressed one
 - Face emotion is a guess from the camera and can be wrong in poor light, or with several faces in view
 - It is push-to-talk, so it can't listen hands-free
+- It can mishear quiet speech, so it needs a clear, normal-volume voice
 
 ## What I want to add next
 - [ ] Use a cross-platform speech setup so it runs on Mac and Linux
@@ -102,6 +108,7 @@ Time from pressing SPACE to the start of Frobot's reply: ___ seconds
 - [ ] Analyse real voice features such as pitch and speed, not just loudness
 - [ ] Combine emotion over several seconds instead of one frame, and choose the main face
 - [ ] Add a wake word so it listens hands-free
+- [ ] Analyse real voice features such as pitch and speed, not just loudness, and improve how quiet speech is picked up
 
 ## Where this could be useful
 - A companion for elderly people who live alone
