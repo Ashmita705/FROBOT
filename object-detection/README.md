@@ -80,20 +80,19 @@ Runs on CPU only, with no GPU acceleration.
 - It is less accurate in low light, and it can mistake or miss small objects (a pen was detected as a toothbrush)
 - It currently works only on Windows because it uses the Windows speech driver
 - Speech can overlap if an announcement runs longer than 3 seconds, and the order of objects can change between announcements
-  
+
+## What I want to add next
+- [ ] Estimate distance from the size of the bounding box
+- [ ] Train a custom model for stairs, doors and curbs
+- [ ] Try a larger YOLO model and better lighting handling to improve accuracy
+- [ ] Use a cross-platform speech setup so it runs on Mac and Linux
+- [ ] Add a speech lock so announcements never overlap, and announce hazards (people, vehicles, stairs) first so the object order is consistent
+
 ## Where this could be useful
 - A navigation aid for visually impaired people
 - Smart glasses or a wearable camera
 - Mobile robots like Frobot
 - Elderly care and home assistance
-
-## What I want to add next
-- Estimate distance from the size of the bounding box
-- Warn about hazards first (people, vehicles, stairs)
-- Make speech work on Mac and Linux, and stop announcements from overlapping
-- rain a custom model for stairs, doors and curbs
-- Run it on a Raspberry Pi or Jetson
-- Plug it into the Frobot robot
-
+  
 ## Author
 Titli · [GitHub](https://github.com/ashmita705)
