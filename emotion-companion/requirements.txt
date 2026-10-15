@@ -1,8 +1,8 @@
-deepface
-openai-whisper
-groq
-sounddevice
-scipy
-pywin32
+deepface==0.0.100
+openai-whisper==20250625
+groq==1.2.0
+sounddevice==0.5.6
+scipy==1.18.1
+pywin32==312
 opencv-python==4.10.0.84
 numpy==2.4.0
