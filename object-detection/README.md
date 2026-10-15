@@ -70,9 +70,9 @@ Runs on CPU only, with no GPU acceleration.
   
   **Fix:** I tested pyttsx3 separately and it worked, so I reworked the pipeline between detection and speech until they worked together. Speech now runs in its own thread every 3 seconds.
 
-- **Problem:** The camera turned on but YOLO did not detect objects, and detection and speech would not work together.
- 
-  **Fix:** I think the YOLO version I installed did not work well with the other libraries on my computer. I switched to a different YOLO version, and the project now runs on `ultralytics 8.4.115`.
+- **Problem:** The camera turned on but YOLO did not detect any objects.
+  
+  **Fix:** I think the YOLO version I installed did not work well with the other libraries on my computer. I switched to a different version, and the project now runs on `ultralytics 8.4.115`.
 
 ## What it can't do yet
 - It doesn't estimate distance yet, only left, ahead or right
