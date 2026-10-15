@@ -78,6 +78,8 @@ Runs on CPU only, with no GPU acceleration.
 - It only works on Windows because it uses the Windows speech driver
 - Speech can overlap if an announcement runs longer than 3 seconds
 - The order of objects in an announcement can change from one announcement to the next
+- It can mistake small objects for similar ones (a pen was detected as a toothbrush)
+- It can miss objects held close to a person, and it detects fewer objects in low light
 
 ## Where this could be useful
 - A navigation aid for visually impaired people
