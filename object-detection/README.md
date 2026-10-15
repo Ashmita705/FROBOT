@@ -10,10 +10,13 @@ Most vision apps for blind users need a phone held up and a good internet connec
 ## What it does
 - Detects 80 kinds of everyday objects in real time using YOLOv8n
 - Says things like "chair on your left" or "person ahead of you"
+- Gives each object its own direction, so one sentence can cover several objects
 - Works offline once the model is downloaded
 - Ignores low-confidence guesses (below 50%) and removes duplicate objects
 - Announces at most 3 objects at a time
 - Says "Path appears clear" when nothing is detected
+- Keeps the video smooth while speaking, because the voice runs in a separate thread
+- Runs on an ordinary webcam and laptop CPU (about 10.6 FPS in my test), with no GPU or special hardware
 - Shows a live video window with boxes around what it found
 
 ## How the program runs
