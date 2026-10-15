@@ -50,15 +50,15 @@ Tested on: ___ (laptop, CPU, RAM)
 
 | Metric | Result |
 |---|---|
-| Average FPS | ___ |
-| Time per frame | ___ ms |
+| Average FPS | 10.6 |
+| Time per frame | 94.2 ms |
 
 | Situation | What happened |
 |---|---|
-| Person in front of the camera | ___ |
-| Chair or table | ___ |
-| Small things like a bottle or phone | ___ |
-| Low light | ___ |
+| Person in front of the camera | Detected the person, even when only a hand was showing. Reported them on the left, ahead and on the right as I moved |
+| Chair or table | Detected the table, the cup on it, and the chair |
+| Small things like a bottle or phone | Detected the phone and the bottle, but mistook a pen for a toothbrush. A bottle held close to a person was missed, and only the person was detected |
+| Low light | Could not detect the couch. Only the person was detected |
 
 ## Problems I ran into
 - **Problem:** YOLO detected objects but pyttsx3 did not speak. The program printed the text but no sound came out.
