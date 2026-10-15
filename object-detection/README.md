@@ -64,7 +64,8 @@ Tested on: ___ (laptop, CPU, RAM)
 - **Problem:** YOLO detected objects but pyttsx3 did not speak. The program printed the text but no sound came out.
   
 **Fix:** I tested pyttsx3 separately and it worked, so I reworked the pipeline between detection and speech until they worked together. Speech now runs in its own thread every 3 seconds.
- **Problem:** The camera turned on but YOLO did not detect objects, and detection and speech would not work together.
+
+- **Problem:** The camera turned on but YOLO did not detect objects, and detection and speech would not work together.
  
 **Fix:** I think the YOLO version I installed did not work well with the other libraries on my computer. I switched to a different YOLO version, and the project now runs on `ultralytics 8.4.115`.
 
