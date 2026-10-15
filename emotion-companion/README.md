@@ -43,17 +43,20 @@ Frobot has to do more than see the world. It also has to talk to the person in a
 Tested with Python 3.12.
 
 1. Install [FFmpeg](https://www.gyan.dev/ffmpeg/builds/) and add it to your PATH (Whisper needs it).
-2. Get a free API key from Groq and save it as a Windows environment variable:
-```bash
-setx GROQ_API_KEY "your-key-here"
-```
-3. Close and reopen VS Code, then run:
+2. Clone the project and install the libraries:
 ```bash
 git clone https://github.com/ashmita705/frobot.git
 cd frobot/emotion-companion
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
+```
+3. Get a free API key from Groq and save it as a Windows environment variable:
+```bash
+setx GROQ_API_KEY "your-key-here"
+```
+4. Close and reopen VS Code, then run:
+```bash
 python main.py
 ```
 
@@ -105,10 +108,9 @@ Time from pressing SPACE to the start of Frobot's reply: ___ seconds
 ## What I want to add next
 - [ ] Use a cross-platform speech setup so it runs on Mac and Linux
 - [ ] Add an offline AI model for use without internet
-- [ ] Analyse real voice features such as pitch and speed, not just loudness
+- [ ] Analyse real voice features such as pitch and speed, not just loudness, and improve how quiet speech is picked up
 - [ ] Combine emotion over several seconds instead of one frame, and choose the main face
 - [ ] Add a wake word so it listens hands-free
-- [ ] Analyse real voice features such as pitch and speed, not just loudness, and improve how quiet speech is picked up
 
 ## Where this could be useful
 - A companion for elderly people who live alone
